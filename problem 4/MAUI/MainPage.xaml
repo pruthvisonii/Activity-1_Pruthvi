@@ -1,0 +1,12 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.MainPage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Enter a number (-50 to 50):" />
+        <Entry x:Name="numberEntry" Keyboard="Numeric" />
+        <Button Text="Show Table" Clicked="OnShowTableClicked" />
+        <ScrollView x:Name="scrollView">
+            <StackLayout x:Name="tableLayout" HorizontalOptions="Center" VerticalOptions="Center" />
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
